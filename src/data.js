@@ -214,9 +214,20 @@ export const certifications = [
     title: "AWS Certified Machine Learning Engineer – Associate",
     issuer: "Amazon Web Services",
     date: "Aug 2026",
+    badge: "/badges/aws-ml-associate.svg",
   },
-  { title: "AWS Agentic AI Demonstrated", issuer: "Amazon Web Services", date: "Aug 2026" },
-  { title: "AWS Serverless Demonstrated", issuer: "Amazon Web Services", date: "Aug 2026" },
+  {
+    title: "AWS Agentic AI Demonstrated",
+    issuer: "Amazon Web Services",
+    date: "Aug 2026",
+    badge: "/badges/aws-agentic-ai.svg",
+  },
+  {
+    title: "AWS Serverless Demonstrated",
+    issuer: "Amazon Web Services",
+    date: "Aug 2026",
+    badge: "/badges/aws-serverless.svg",
+  },
 ];
 
 export const education = [

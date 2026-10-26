@@ -487,12 +487,15 @@ function Credentials() {
           <h3 className="mini-title">🎖️ Certifications</h3>
           {certifications.map((c) => (
             <div className="cert-card" key={c.title}>
-              <div className="cert-badge">AWS</div>
-              <div>
+              <div className="cert-badge">
+                <img src={c.badge} alt={`${c.title} badge`} loading="lazy" />
+              </div>
+              <div className="cert-info">
                 <h4>{c.title}</h4>
                 <p>
                   {c.issuer} · {c.date}
                 </p>
+                <span className="cert-verified">● Verified</span>
               </div>
             </div>
           ))}

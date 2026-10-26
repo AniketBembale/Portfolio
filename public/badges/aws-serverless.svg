@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="AWS Serverless">
+  <defs>
+    <linearGradient id="slFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb020"/>
+      <stop offset="1" stop-color="#ff6a00"/>
+    </linearGradient>
+    <linearGradient id="slRibbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232f3e"/>
+      <stop offset="1" stop-color="#131a24"/>
+    </linearGradient>
+  </defs>
+  <path d="M42 70 L30 112 L45 103 L54 115 L63 86 Z" fill="url(#slRibbon)"/>
+  <path d="M78 70 L90 112 L75 103 L66 115 L57 86 Z" fill="url(#slRibbon)"/>
+  <path d="M60 8 L98 30 V74 L60 96 L22 74 V30 Z" fill="url(#slFace)" stroke="#0b0d12" stroke-width="2"/>
+  <path d="M60 8 L98 30 V74 L60 96 L22 74 V30 Z" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="60" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="20" fill="#0b0d12">aws</text>
+  <path d="M44 50 q16 9 32 0" stroke="#232f3e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <text x="60" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#0b0d12">SERVERLESS</text>
+</svg>

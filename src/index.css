@@ -1,18 +1,19 @@
 :root {
-  --bg: #080b14;
-  --bg-soft: #0e1322;
-  --bg-card: #121a2b;
-  --bg-card-hover: #17213640;
-  --border: #1f2a40;
-  --border-glow: #2dd4bf33;
-  --text: #e8edf6;
-  --text-dim: #9aa7bd;
-  --text-faint: #65748f;
-  --accent: #2dd4bf;
-  --accent-2: #6366f1;
-  --accent-3: #f472b6;
-  --grad: linear-gradient(120deg, #2dd4bf 0%, #6366f1 55%, #a855f7 100%);
-  --shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.7);
+  --bg: #0a0715;
+  --bg-soft: #120d22;
+  --bg-card: #171130;
+  --bg-card-hover: #1e1740;
+  --border: #2a2150;
+  --border-glow: #a855f73d;
+  --text: #f1edfb;
+  --text-dim: #b2a9cf;
+  --text-faint: #7a6fa0;
+  --accent: #c084fc;
+  --accent-2: #38bdf8;
+  --accent-3: #fb7185;
+  --accent-amber: #fbbf24;
+  --grad: linear-gradient(120deg, #38bdf8 0%, #a855f7 50%, #fb7185 100%);
+  --shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.75);
   --mono: "JetBrains Mono", ui-monospace, monospace;
   --sans: "Inter", system-ui, sans-serif;
   --display: "Space Grotesk", var(--sans);
@@ -45,9 +46,9 @@ body::before {
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(60% 50% at 15% 0%, rgba(45, 212, 191, 0.12), transparent 60%),
-    radial-gradient(50% 50% at 90% 10%, rgba(99, 102, 241, 0.14), transparent 60%),
-    radial-gradient(60% 60% at 60% 100%, rgba(168, 85, 247, 0.1), transparent 60%);
+    radial-gradient(60% 50% at 12% 0%, rgba(56, 189, 248, 0.14), transparent 60%),
+    radial-gradient(55% 50% at 90% 8%, rgba(168, 85, 247, 0.18), transparent 60%),
+    radial-gradient(60% 60% at 60% 100%, rgba(251, 113, 133, 0.12), transparent 60%);
   pointer-events: none;
 }
 
@@ -71,7 +72,7 @@ a {
 
 ::selection {
   background: var(--accent);
-  color: #04110f;
+  color: #150a22;
 }
 
 .container {
@@ -309,7 +310,7 @@ a {
 
 .nav-cta:hover {
   background: var(--accent);
-  color: #04110f;
+  color: #150a22;
 }
 
 .nav-toggle {
@@ -396,13 +397,13 @@ a {
 
 .btn-primary {
   background: var(--grad);
-  color: #060814;
-  box-shadow: 0 10px 30px -10px rgba(45, 212, 191, 0.5);
+  color: #0a0715;
+  box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.55);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 40px -10px rgba(99, 102, 241, 0.6);
+  box-shadow: 0 16px 40px -10px rgba(56, 189, 248, 0.6);
 }
 
 .btn-ghost {
@@ -499,7 +500,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: var(--shadow), 0 0 60px -20px rgba(99, 102, 241, 0.5);
+  box-shadow: var(--shadow), 0 0 60px -20px rgba(168, 85, 247, 0.5);
   font-family: var(--mono);
 }
 
@@ -652,18 +653,18 @@ a {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.6);
+  background: #34d399;
+  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6);
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   70% {
-    box-shadow: 0 0 0 10px rgba(45, 212, 191, 0);
+    box-shadow: 0 0 0 10px rgba(52, 211, 153, 0);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(45, 212, 191, 0);
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
   }
 }
 
@@ -864,7 +865,7 @@ a {
   border-radius: 50%;
   background: var(--bg);
   border: 3px solid var(--accent);
-  box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.12);
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.15);
 }
 
 .tl-period {
@@ -934,7 +935,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(400px at var(--mx, 50%) var(--my, 0%), rgba(45, 212, 191, 0.08), transparent 70%);
+  background: radial-gradient(400px at var(--mx, 50%) var(--my, 0%), rgba(168, 85, 247, 0.1), transparent 70%);
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
@@ -971,7 +972,7 @@ a {
   padding: 5px 10px;
   border: 1px solid var(--border-glow);
   border-radius: 20px;
-  background: rgba(45, 212, 191, 0.06);
+  background: rgba(168, 85, 247, 0.08);
 }
 
 .proj-icon {
@@ -1127,27 +1128,50 @@ a {
 }
 
 .cert-badge {
-  width: 46px;
-  height: 46px;
+  width: 64px;
+  height: 64px;
   flex-shrink: 0;
-  border-radius: 12px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #ff9900, #ff6a00);
-  color: #0b0d12;
-  font-weight: 700;
-  font-family: var(--display);
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.cert-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.cert-card:hover .cert-badge {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+.cert-info {
+  min-width: 0;
 }
 
 .cert-card h4 {
   font-size: 0.98rem;
   font-weight: 600;
+  line-height: 1.35;
 }
 
 .cert-card p {
   font-size: 0.82rem;
   color: var(--text-faint);
   font-family: var(--mono);
+  margin-top: 2px;
+}
+
+.cert-verified {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.72rem;
+  font-family: var(--mono);
+  color: #34d399;
+  letter-spacing: 0.04em;
 }
 
 .edu-card .tl-period {
@@ -1270,7 +1294,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(60% 100% at 50% 0%, rgba(45, 212, 191, 0.12), transparent 70%);
+  background: radial-gradient(60% 100% at 50% 0%, rgba(168, 85, 247, 0.14), transparent 70%);
   pointer-events: none;
 }
 
