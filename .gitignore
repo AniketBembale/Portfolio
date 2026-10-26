@@ -6,3 +6,9 @@ dist-ssr
 .vite
 extract.py
 parse_repos.py
+
+# Personal docs and binaries — keep repo code-only
+*.pdf
+*.docx
+*.doc
+MY_PIC.png
