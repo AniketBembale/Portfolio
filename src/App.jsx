@@ -195,9 +195,6 @@ function HeroVisual() {
         </div>
       </div>
 
-      <div className="hero-badge badge-top">
-        <span className="pulse" /> Open to work
-      </div>
       <div className="hero-badge badge-bot">🏆 2× Best Paper</div>
     </div>
   );
