@@ -599,7 +599,7 @@ function Footer() {
   return (
     <footer className="container footer">
       <span>
-        © {new Date().getFullYear()} {profile.name} · Built with React
+        © {new Date().getFullYear()} {profile.name}
       </span>
       <div className="footer-links">
         <a href={profile.links.github} target="_blank" rel="noreferrer">

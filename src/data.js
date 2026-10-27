@@ -209,24 +209,30 @@ export const publications = [
   },
 ];
 
+// Badges live in src/assets so Vite resolves their URLs correctly
+// regardless of the configured base path (e.g. GitHub Pages "/Portfolio/").
+import badgeMl from "./assets/badges/aws-ml-associate.svg";
+import badgeAgentic from "./assets/badges/aws-agentic-ai.svg";
+import badgeServerless from "./assets/badges/aws-serverless.svg";
+
 export const certifications = [
   {
     title: "AWS Certified Machine Learning Engineer – Associate",
     issuer: "Amazon Web Services",
     date: "Aug 2026",
-    badge: "/badges/aws-ml-associate.svg",
+    badge: badgeMl,
   },
   {
     title: "AWS Agentic AI Demonstrated",
     issuer: "Amazon Web Services",
     date: "Aug 2026",
-    badge: "/badges/aws-agentic-ai.svg",
+    badge: badgeAgentic,
   },
   {
     title: "AWS Serverless Demonstrated",
     issuer: "Amazon Web Services",
     date: "Aug 2026",
-    badge: "/badges/aws-serverless.svg",
+    badge: badgeServerless,
   },
 ];
 
